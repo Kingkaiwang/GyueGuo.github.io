@@ -18,6 +18,7 @@ description: javascript中的隐式转换
 - 字符串与数值运算优先调用`toString`方法
 <div id="jump"></div>
 ### toString
+
 | 对象类型        | 返回值             |
 | ----------- |:--------------------:|
 | Array       | 数组的元素被转换为字符串，这些字符串由逗号分隔，连接在一起。其操作与 Array.toString 和 Array.join 方法相同   |
@@ -29,6 +30,7 @@ description: javascript中的隐式转换
 | String      | String 对象的值   |
 
 ### valueOf
+
 | 对象类型        | 返回值             |
 | ----------- |:--------------------:|
 | Array       | 数组本身              |
@@ -59,6 +61,7 @@ undefined == null; //true
 > 不同类型的基础数据之间的加法，数据先转换为number，然后转换为string(如果有string类型数据参与运算)
 
 > 对象参与基础类型数据运算，先转化为基础类型。先调用其valueOf方法，如果返回的不是基础类型，再调用其toString方法,如果返回的还不是基础类型，则抛出错误。但是，Date数据刚好相反
+
 
 其它类型转化数字
 | 对象类型        | 返回值             |
