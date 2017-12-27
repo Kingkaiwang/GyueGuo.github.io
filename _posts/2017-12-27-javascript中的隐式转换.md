@@ -7,7 +7,7 @@ tags: [javascript]
 description: javascript中的隐式转换
 ---
 
-#### javascript中-不同数据类型-之间进行-比较-、-运算-时会发生隐式转换。
+#### javascript中*不同数据类型*之间进行*比较*、*运算*时会发生隐式转换。
 
 具体是调用对象的`valueOf`和`toString`放来获取原始值，如果返回的值不为基本数据类型则调用另一个方法。
 
@@ -32,13 +32,13 @@ description: javascript中的隐式转换
 
 | 对象类型        | 返回值             |
 | ----------- |:--------------------:|
-| Array       | 数组本身   |
-| Object      | 对象本身  |
+| Array       | 数组本身              |
+| Object      | 对象本身              |
 | Date        | 返回1970年1月1日午夜开始计的UTC毫秒数， 与getTime返回值相同  |
-| Functon     | 函数本身  |
-| Boolean     | Boolean  |
-| Number      | Number   |
-| String      | String   |
+| Functon     | 函数本身              |
+| Boolean     | Boolean              |
+| Number      | Number               |
+| String      | String               |
 
 
 ### 比较时转换规则如下：
