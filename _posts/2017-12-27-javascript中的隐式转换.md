@@ -7,7 +7,7 @@ tags: [javascript]
 description: javascript中的隐式转换
 ---
 
-#### javascript中*不同数据类型*之间进行*比较*、*运算*时会发生隐式转换。
+#### javascript中**不同数据类型**之间进行**比较**、**运算**时会发生隐式转换。
 
 具体是调用对象的`valueOf`和`toString`放来获取原始值，如果返回的值不为基本数据类型则调用另一个方法。
 
@@ -29,7 +29,6 @@ description: javascript中的隐式转换
 | String      | String 对象的值   |
 
 ### valueOf
-
 | 对象类型        | 返回值             |
 | ----------- |:--------------------:|
 | Array       | 数组本身              |
