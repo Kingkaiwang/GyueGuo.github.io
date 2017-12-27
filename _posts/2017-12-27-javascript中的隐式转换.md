@@ -15,7 +15,7 @@ description: javascript中的隐式转换
 - `toString` 以字符串形式返回对象的原始值
 - 字符串运算中优先调用`toString`方法
 - 数值运算中优先调用`valueOf`方法
-- 字符串与数值运算优先调用`toString`方法
+- 如果，一个对象同时存在valueOf方法和toString方法，那么，valueOf方法总是会被优先调用的
 <div id="jump"></div>
 ### toString
 
