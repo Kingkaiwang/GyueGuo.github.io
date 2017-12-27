@@ -45,7 +45,7 @@ description: javascript中的隐式转换
 ![转换规则](/img/2017122701.png)
 也就是说 不同类型之间运算、比较前，引擎按如上规则进行转换为相同类型后再做运算、比较;
 
-*特殊情况*:
+#### 特殊情况:
 - 除空字符串(''),NaN,0，null,undefined这几个以外，其他类型转换为Boolean类型返回的都是true;
 - undefined和null 比较返回true，二者和其他值比较返回false
 ```javascript
@@ -57,6 +57,7 @@ undefined == null; //true
 ### 运算时转换规则如下：
 
 > 不同类型的基础数据之间的加法，数据先转换为number，然后转换为string(如果有string类型数据参与运算)
+
 > 对象参与基础类型数据运算，先转化为基础类型。先调用其valueOf方法，如果返回的不是基础类型，再调用其toString方法,如果返回的还不是基础类型，则抛出错误。但是，Date数据刚好相反
 
 其它类型转化数字
